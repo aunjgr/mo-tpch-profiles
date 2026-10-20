@@ -2,6 +2,14 @@
 
 Downloadable profiling evidence for [matrixorigin/matrixone#30569](https://github.com/matrixorigin/matrixone/issues/30569).
 
+## Individual compressed files
+
+[Open the file-by-file download table on MatrixOne #30569](https://github.com/matrixorigin/matrixone/issues/30569#issuecomment-6288483604). The published snapshot includes 75 accepted raw perf recordings, 16 Go pprof files, 12 matching executables/libraries, and separate metadata/analyzed CPU exports. Each `.zst` link contains one compressed original file; `.pb.gz` links contain individual Go profiles.
+
+[Reading instructions](https://github.com/aunjgr/mo-tpch-profiles/releases/download/diagnosis-20261020/INDIVIDUAL-PROFILES.md) · [Manifest](https://github.com/aunjgr/mo-tpch-profiles/releases/download/diagnosis-20261020/individual-profile-manifest.json) · [Checksums](https://github.com/aunjgr/mo-tpch-profiles/releases/download/diagnosis-20261020/INDIVIDUAL-SHA256SUMS.txt)
+
+<!-- individual-profile-downloads-20261020 -->
+
 ## Completed targeted diagnosis
 
 [Download release](https://github.com/aunjgr/mo-tpch-profiles/releases/tag/diagnosis-20261020) · [Starter bundle](https://github.com/aunjgr/mo-tpch-profiles/releases/download/diagnosis-20261020/tpch-30569-diagnosis-starter.tar.zst) · [Checksums](https://github.com/aunjgr/mo-tpch-profiles/releases/download/diagnosis-20261020/SHA256SUMS.txt)
@@ -12,7 +20,7 @@ Extract with `tar --zstd -xf tpch-30569-diagnosis-starter.tar.zst`, then read RE
 
 ## Expanded comparison
 
-The all-query matrix is running independently of PR merge state. Its downloadable native/CPU/wait/allocation evidence, raw perf captures and exact executable/symbol support bundle will be added after measurements and offline analysis finish, then linked from the tracking issue.
+The all-query matrix is running independently of PR merge state. The individual download table above contains the completed capture snapshot at its stated timestamp, including completed extended-run profiles. Final measurement conclusions will be linked from the tracking issue when the remaining experiments and offline analysis finish.
 
 ## Exact versions and metric boundaries
 
